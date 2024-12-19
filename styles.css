@@ -1,0 +1,504 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+h2
+{
+	color: #00bcd4;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #00bcd4;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #333333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Burger Menu Styles */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* Mobile Menu Hidden State - Default Hidden */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none; /* Hidden by default in mobile */
+        flex-direction: column;
+        background-color: #1e1e1e;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        border-top: 2px solid #333333;
+    }
+
+    .nav-links.mobile-visible {
+        display: flex; /* Visible when toggled */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #121212;
+    padding: 0 20px;
+}
+
+.hero-content .intro {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-content .highlight {
+    color: #00bcd4;
+}
+
+.hero-content .tagline {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #bbbbbb;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons .btn {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #00bcd4;
+}
+
+/* About Me Section */
+.about {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content .profile-pic {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #00bcd4;
+}
+
+.about-content .about-text {
+    max-width: 600px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #444444;
+    transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #00bcd4;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 20px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    width: 300px;
+    border: 2px solid #333333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00bcd4;
+}
+
+/* Experience Section */
+.experience {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #333333;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    width: 100%;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #00bcd4;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content .intro {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content .profile-pic {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content .intro {
+        font-size: 1.5rem;
+    }
+
+    .cta-buttons .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+/* Back to Homepage Button */
+.back-home {
+    text-align: left;
+    margin: 20px 30px;
+}
+
+.back-home .btn {
+    text-decoration: none;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-home .btn:hover {
+    background-color: #00bcd4;
+}
+
+/* Project Showcase Section */
+.project-showcase {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #bbbbbb;
+}
+
+.project-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.project-item {
+    max-width: 800px;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border: 2px solid #333333;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.02);
+}
+
+.image-description {
+    margin-top: 10px;
+    color: #bbbbbb;
+    font-size: 1rem;
+}
+
+/* Project Conclusion Section */
+.project-conclusion {
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.project-conclusion h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00bcd4;
+}
+
+.project-conclusion p {
+    font-size: 1.2rem;
+    color: #bbbbbb;
+}
+
+/* Responsive Design */
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .project-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        max-width: 100%;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .image-description {
+        font-size: 0.9rem;
+    }
+
+    .project-conclusion h2 {
+        font-size: 1.5rem;
+    }
+
+    .project-conclusion p {
+        font-size: 1rem;
+    }
+}
+
+/* Small Screens (Phone Landscape and Below) */
+@media (max-width: 480px) {
+    .project-title {
+        font-size: 1.8rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .image-description {
+        font-size: 0.85rem;
+    }
+
+    .project-conclusion h2 {
+        font-size: 1.2rem;
+    }
+
+    .project-conclusion p {
+        font-size: 0.9rem;
+    }
+
+    .back-home .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    color: #25D366;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.whatsapp-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle; /* Ensures the icon aligns with the text */
+    position: relative;
+    top: -1px; /* Adjust this value to fine-tune the alignment */
+}
