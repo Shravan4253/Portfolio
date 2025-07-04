@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAOPO - Online Protection Order System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-color: #6e45e2;
+            --secondary-color: #88d3ce;
+            --dark-color: #1a1a2e;
+            --light-color: #f5f5f7;
+            --accent-color: #ff6b6b;
+            --text-color: #333;
+            --text-light: #777;
+            --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+            --bg-color: #ffffff;
+            --bg-color-2: #f8f9fa;
+            --heading-color: #1a1a2e;
+            --text-color-light: #6c757d;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        /* Project Showcase Specific Styles */
+        .project-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Improved Back Button */
+        .back-home {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 1000;
+        }
+
+        .back-home .btn {
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            transition: var(--transition);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .back-home .btn:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(110, 69, 226, 0.4);
+        }
+
+        .back-home .btn i {
+            transition: var(--transition);
+        }
+
+        .back-home .btn:hover i {
+            transform: translateX(-5px);
+        }
+
+        /* Hero Section */
+        .project-header {
+            padding: 10rem 0 4rem;
+            background: var(--dark-color);
+            color: white;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 4rem;
+        }
+
+        .project-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+        }
+
+        .project-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1.2;
+        }
+
+        .project-subtitle {
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+
+        .project-description {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+
+        .project-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            min-width: 200px;
+            transition: var(--transition);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Improved Gallery Layout */
+        .project-gallery {
+            padding: 3rem 0 6rem;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .gallery-title {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+        }
+
+        .gallery-subtitle {
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* New Image Display System */
+        .gallery-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            background: #f8f9fa;
+            padding: 2rem;
+        }
+
+        .gallery-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 600px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-content {
+            padding: 2.5rem;
+        }
+
+        .gallery-item-title {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+
+        .gallery-item-desc {
+            color: var(--text-light);
+            margin-bottom: 0;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* Project Outcome */
+        .project-outcome {
+            padding: 6rem 0;
+            background: var(--dark-color);
+            color: white;
+            position: relative;
+        }
+
+        .outcome-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .outcome-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .outcome-text {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .gallery-item {
+            opacity: 0;
+            animation: fadeIn 0.6s forwards;
+        }
+
+        /* Delay animations for each gallery item */
+        .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+        .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+        .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+        .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+        .gallery-item:nth-child(5) { animation-delay: 0.5s; }
+        .gallery-item:nth-child(6) { animation-delay: 0.6s; }
+        .gallery-item:nth-child(7) { animation-delay: 0.7s; }
+        .gallery-item:nth-child(8) { animation-delay: 0.8s; }
+        .gallery-item:nth-child(9) { animation-delay: 0.9s; }
+        .gallery-item:nth-child(10) { animation-delay: 1s; }
+        .gallery-item:nth-child(11) { animation-delay: 1.1s; }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .project-container {
+                padding: 0 3rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .project-title {
+                font-size: 3rem;
+            }
+            
+            .gallery-item-title {
+                font-size: 1.5rem;
+            }
+            
+            .gallery-content {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .project-header {
+                padding: 8rem 0 3rem;
+            }
+            
+            .project-title {
+                font-size: 2.5rem;
+            }
+            
+            .project-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .back-home .btn {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .gallery-title {
+                font-size: 2rem;
+            }
+            
+            .gallery-list {
+                gap: 3rem;
+            }
+            
+            .image-container {
+                padding: 1.5rem;
+            }
+            
+            .outcome-title {
+                font-size: 2rem;
+            }
+            
+            .stat-item {
+                min-width: 150px;
+                padding: 1.2rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .project-container {
+                padding: 0 1.5rem;
+            }
+            
+            .project-title {
+                font-size: 2rem;
+            }
+            
+            .project-subtitle {
+                font-size: 1rem;
+            }
+            
+            .project-description {
+                font-size: 1rem;
+            }
+            
+            .back-home {
+                left: 20px;
+                top: 20px;
+            }
+            
+            .back-home .btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+            }
+            
+            .project-stats {
+                gap: 1rem;
+            }
+            
+            .stat-item {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .gallery-title {
+                font-size: 1.75rem;
+            }
+            
+            .gallery-subtitle {
+                font-size: 1rem;
+            }
+            
+            .gallery-content {
+                padding: 1.5rem;
+            }
+            
+            .gallery-item-title {
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+            
+            .gallery-item-desc {
+                font-size: 0.95rem;
+            }
+            
+            .outcome-text {
+                padding: 1.5rem;
+                font-size: 1rem;
+            }
+            
+            .image-container {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .project-title {
+                font-size: 1.8rem;
+            }
+            
+            .back-home .btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+            
+            .gallery-item-title {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Improved Back Button -->
+    <div class="back-home">
+        <a href="index.html" class="btn"><i class="fas fa-chevron-left"></i> Back to Portfolio</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="project-header">
+        <div class="project-container">
+            <h1 class="project-title">SAOPO</h1>
+            <p class="project-subtitle">Online Protection Order System for Domestic Violence Victims</p>
+            <p class="project-description">
+                This project is an online platform for filing protection orders, designed to simplify and speed up the process of seeking legal protection against abuse. It allows victims of domestic violence or harassment to file for a protection order without needing to visit a court.
+            </p>
+            
+            <div class="project-stats">
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Online</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Access</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Secure</div>
+                    <div class="stat-label">Confidential</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Improved Gallery Section -->
+    <section class="project-gallery">
+        <div class="project-container">
+            <div class="gallery-header">
+                <h2 class="gallery-title">System Features</h2>
+                <p class="gallery-subtitle">Explore each component of the SAOPO system in detail</p>
+            </div>
+            
+            <div class="gallery-list">
+                <!-- Feature 1 -->
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="OPO Images/Login.png" alt="Login Screen" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-item-title">Secure Login Portal</h3>
+                        <p class="gallery-item-desc">
+                            The login page provides a secure entry point to the Online Protection Order Application system. Designed with user privacy in mind, it ensures only authorized individuals can access sensitive legal services while maintaining a clean, approachable interface.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="OPO Images/Register.png" alt="Registration Screen" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-item-title">Simple Registration Process</h3>
+                        <p class="gallery-item-desc">
+                            The streamlined registration form allows victims to quickly create an account while collecting all necessary information. The process is designed to be as non-intrusive as possible while ensuring proper identification for legal proceedings.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="OPO Images/Dashboard.png" alt="User Dashboard" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-item-title">Comprehensive User Dashboard</h3>
+                        <p class="gallery-item-desc">
+                            The central hub provides users with clear options to file a new protection order or connect with support professionals. The intuitive layout prioritizes the most critical functions while maintaining a calm, reassuring design aesthetic.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="OPO Images/File.png" alt="Application Form" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-item-title">Efficient Application Form</h3>
+                        <p class="gallery-item-desc">
+                            The protection order application form is designed for simplicity and efficiency. It guides users through the process step-by-step, ensuring all necessary information is collected while minimizing stress during what can be a difficult time.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="OPO Images/Success.png" alt="Submission Confirmation" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-item-title">Instant Case Confirmation</h3>
+                        <p class="gallery-item-desc">
+                            Upon successful submission, users receive immediate confirmation with their unique case number. This provides reassurance that their application has been received and allows for easy tracking through the dashboard.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="OPO Images/Status.png" alt="Case Status" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-item-title">Real-Time Case Tracking</h3>
+                        <p class="gallery-item-desc">
+                            Users can monitor their case status throughout the review process. The system provides clear visual indicators of progress, helping reduce anxiety by keeping applicants informed at every stage.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 7 -->
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="OPO Images/CStatus.png" alt="Completed Case" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-item-title">Case Resolution Interface</h3>
+                        <p class="gallery-item-desc">
+                            Once a case is completed, additional options become available to the user. This includes access to official documentation and resources for next steps, all presented in a clear, easy-to-understand format.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 8 -->
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="OPO Images/Result.png" alt="Judge's Decision" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-item-title">Digital Order Issuance</h3>
+                        <p class="gallery-item-desc">
+                            The judge's decision is displayed clearly, eliminating the need for in-person court visits. This digital approach maintains the legal authority of protection orders while significantly reducing barriers to access.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 9 -->
+                <div class="gallery-item">
+                    <div class="image-container">
+                        <img src="OPO Images/CareCenter.png" alt="Support Center" class="gallery-image">
+                    </div>
+                    <div class="gallery-content">
+                        <h3 class="gallery-item-title">Professional Support Portal</h3>
+                        <p class="gallery-item-desc">
+                            The integrated care center connects users with trained professionals who can provide guidance and support throughout the process. This feature ensures no one has to navigate the legal system alone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Outcome -->
+    <section class="project-outcome">
+        <div class="project-container">
+            <div class="outcome-container">
+                <h2 class="outcome-title">Transformational Impact</h2>
+                <p class="outcome-text">
+                    While this project addresses a real-world problem, it is a challenging endeavor as it would need to be integrated with government systems and ID validation processes, which is no simple task. Additionally, the program would need to be registered as an authorized facilitator for the application of online protection orders. Protection orders cannot be processed by just anyone; they must be facilitated by recognized entities, as seen in my research. However, through this process, I have realized the huge potential of the system. There are many reasons why someone may not be able to leave their home to apply, such as living in remote rural areas or wanting to keep the application confidential to avoid further harm from the abuser. I truly believe this system has significant potential to make legal protection more accessible to those in need.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple animation trigger
+        document.addEventListener('DOMContentLoaded', function() {
+            // Make back button more visible when scrolling
+            window.addEventListener('scroll', function() {
+                const backBtn = document.querySelector('.back-home .btn');
+                if (window.scrollY > 300) {
+                    backBtn.style.background = 'var(--primary-color)';
+                    backBtn.style.boxShadow = '0 5px 25px rgba(110, 69, 226, 0.5)';
+                } else {
+                    backBtn.style.background = 'rgba(26, 26, 46, 0.95)';
+                    backBtn.style.boxShadow = '0 5px 25px rgba(0, 0, 0, 0.2)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

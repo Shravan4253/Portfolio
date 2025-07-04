@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shravan Ramnarain | Developer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Particle.js Background -->
+    <div id="particles-js"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-code">
+            <div class="code-line animate__animated animate__flash animate__infinite">Loading portfolio...</div>
+            <div class="code-line">> Initializing systems...</div>
+            <div class="code-line">> Compiling assets...</div>
+            <div class="code-line">> Rendering components...</div>
+            <div class="code-line">> Welcome to Shravan's Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Floating Cursor Trailer -->
+    <div class="cursor-trailer"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand glow-text" href="#home">
+                <span class="brand-icon"><i class="fas fa-code"></i></span>
+                <span class="brand-name">Shravan Ramnarain</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-download" href="(LATEST)Shravan Ramnarain CV.pdf" download>
+                            <i class="fas fa-download"></i> Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-7 hero-content">
+                    <div class="hero-text">
+                        <h4 class="hero-subtitle animate__animated animate__fadeInUp">Hello World, I'm</h4>
+                        <h1 class="hero-title animate__animated animate__fadeInUp animate__delay-1s">
+                            <span class="text-gradient">Shravan Ramnarain</span>
+                        </h1>
+                        <div class="typewriter animate__animated animate__fadeInUp animate__delay-2s">
+                            <h2 class="hero-tagline">Senior IT Developer & Solutions Architect</h2>
+                        </div>
+                        <p class="hero-description animate__animated animate__fadeInUp animate__delay-3s">
+                            Crafting innovative digital solutions that bridge technology and business needs with
+                            precision and creativity.
+                        </p>
+                        <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-4s">
+                            <a href="#portfolio" class="btn btn-primary btn-glow">
+                                <span class="btn-text">View My Work</span>
+                                <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-glow-secondary">
+                                <span class="btn-text">Contact Me</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="hero-image-container">
+                        <div class="hero-image-wrapper">
+                            <img src="DSC04268-Enhanced-NR.jpg" alt="Shravan Ramnarain" class="hero-image">
+                            <div class="hero-image-border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-down">
+            <a href="#about" class="scroll-down-link">
+                <div class="scroll-down-animation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="scroll-down-text">Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Get to know the person behind the code</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-image-wrapper">
+                        <img src="IMG-20250503-WA0042.jpg" alt="Shravan Ramnarain" class="about-image">
+                        <div class="about-image-dots"></div>
+                        <div class="about-image-badge">
+                            <div class="badge-content">
+                                <span class="badge-number">2+</span>
+                                <span class="badge-text">Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <h3 class="about-title">Innovative IT Professional with a Passion for Problem-Solving</h3>
+                        <div class="about-text">
+                            <p>I'm a seasoned IT developer and solutions architect with a proven track record of
+                                delivering cutting-edge technology solutions that drive business growth and operational
+                                efficiency. With expertise spanning full-stack development, system architecture, and
+                                cloud computing, I bridge the gap between complex technical challenges and practical
+                                business solutions.</p>
+                            <p>My approach combines technical mastery with strategic thinking, ensuring that every
+                                solution I develop not only solves the immediate problem but also scales for future
+                                needs. I thrive in dynamic environments where innovation and quality are paramount.</p>
+                        </div>
+                        <div class="about-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span class="info-label">Name:</span>
+                                        <span class="info-value">Shravan Ramnarain</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span class="info-label">Email:</span>
+                                        <span class="info-value">shravanr412@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span class="info-label">From:</span>
+                                        <span class="info-value">South Africa</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span class="info-label">Availability:</span>
+                                        <span class="info-value">Open to Opportunities</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-buttons">
+                            <a href="#contact" class="btn btn-primary btn-glow">
+                                <span class="btn-text">Hire Me</span>
+                                <span class="btn-icon"><i class="fas fa-briefcase"></i></span>
+                            </a>
+                            <a href="#portfolio" class="btn btn-outline-primary">
+                                <span class="btn-text">View Portfolio</span>
+                                <span class="btn-icon"><i class="fas fa-eye"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life Journey Section -->
+    <section class="section journey-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-gradient">Journey</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Key moments that shaped my career</p>
+            </div>
+
+            <div class="journey-container">
+                <!-- Early Years -->
+                <div class="journey-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="journey-image-container">
+                                <img src="IMG_20250515_203434.jpg" alt="Early Years" class="journey-image">
+                                <div class="journey-year">2003-2016</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="journey-content">
+                                <h3>Early Years & Discovery</h3>
+                                <p>My journey into tech began when I was just 6 years old. I got my first laptop—an
+                                    extremely old, used one passed down from a neighbor. Despite its age, it felt like a
+                                    treasure chest. I spent hours messing around with CDs and DVDs, copying music from
+                                    discs to the laptop, and just exploring what I could do. That curiosity became the
+                                    spark.</p>
+
+                                <p>One day, I came home from primary school and found that my brother had taken off
+                                    every single key from the keyboard and collected them in a bowl. I was furious—but
+                                    it also made me realize how much I cared about that machine. That moment stayed with
+                                    me. It was more than just frustration; it was the beginning of my passion for
+                                    computers and building things.</p>
+
+                                <p><strong>Lesson Learned:</strong> Curiosity and hands-on experience drive real
+                                    learning. Sometimes, a broken keyboard is what shows you just how much something
+                                    matters to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- High School -->
+                <div class="journey-item">
+                    <div class="row align-items-center flex-md-row-reverse">
+                        <div class="col-md-4">
+                            <div class="journey-image-container">
+                                <img src="IMG_20250627_224453.jpg" alt="High School" class="journey-image">
+                                <div class="journey-year">2017-2021</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="journey-content">
+                                <h3>High School & First Projects</h3>
+                                <p>During high school, I started developing my first real applications—simple apps and
+                                    utilities for friends. This was when I realized programming could be more than just
+                                    a hobby.</p>
+
+                                <p>It was also the time I became more responsible with money. Not all of it went to
+                                    sweets and chocolates anymore. I started investing in hardware—buying SSDs, RAM, and
+                                    tools that allowed me to experiment. I watched endless YouTube videos and quickly
+                                    discovered that things I once thought were only possible for professionals with
+                                    massive setups and big budgets were actually achievable at home. You could build
+                                    mini versions of those same “impossible” things yourself.</p>
+
+                                <p>From swapping my first HDD to an SSD and witnessing the instant speed boost, to
+                                    learning how software and hardware come together, every bit of money and time
+                                    started going into something that pushed me deeper into the world of technology. The
+                                    spark was growing—and it was starting to look like a path, not just a passion.</p>
+
+                                <p><strong>Lesson Learned:</strong> Every small upgrade—whether it’s a component or a
+                                    line of code—adds up. Investing in your tools and curiosity accelerates your growth
+                                    more than you realize.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- University -->
+                <div class="journey-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="journey-image-container">
+                                <img src="IMG_20250627_175051.jpg" alt="University" class="journey-image">
+                                <div class="journey-year">2022-2024</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="journey-content">
+                                <h3>University & Professional Growth</h3>
+                                <p>My university years were transformative, both academically and professionally. It’s
+                                    where I first learned web development—and everything changed from there. I was
+                                    introduced to automation, IoT, and building systems that brought real convenience
+                                    and intelligence into everyday tasks. This was the point where my curiosity evolved
+                                    into innovation.</p>
+
+                                <p>At different points in my life, I always thought my latest project was my best work.
+                                    But as I progressed through university, each new challenge pushed me further, and
+                                    every project showed massive improvement over the last. College didn’t just teach me
+                                    tech skills—it gave me a new kind of spark. It made me realize the potential I had,
+                                    and that with the right mindset, tools, and drive, I could build almost anything.
+                                </p>
+
+                                <p><strong>Lesson Learned:</strong> Growth is a constant journey. The more you build,
+                                    the more you realize what’s possible—and that there's opportunity hidden in
+                                    everything.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career -->
+                <div class="journey-item">
+                    <div class="row align-items-center flex-md-row-reverse">
+                        <div class="col-md-4">
+                            <div class="journey-image-container">
+                                <img src="DSC04272-Enhanced-NR.jpg" alt="Professional Career" class="journey-image">
+                                <div class="journey-year">2025-Present</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="journey-content">
+                                <h3>Professional Career</h3>
+                                <p>Entering the professional world was both exciting and humbling. Although my formal
+                                    career timeline begins in 2025, I was already employed in 2024 as part of a college
+                                    requirement. Stepping into the workplace for the first time took everything to a
+                                    whole new level. In college, I felt ready for anything—until I was asked to complete
+                                    tasks I had never encountered before. I quickly realized that knowing how to learn
+                                    was more valuable than knowing everything.</p>
+
+                                <p>This is where I learned one of my most important lessons: "No" is never an answer.
+                                    When I was introduced to APIs and saw the power of system integration for the first
+                                    time, it completely shifted my perspective. I began to understand the scale and
+                                    potential of real-world applications.</p>
+
+                                <p>Fast forward to 2025: I've successfully built an Online Protection Order Application
+                                    System, a full-scale Dispatch & Response platform, CRMs, internal organizational
+                                    Intranets, portals, and full-featured E-Commerce websites. And this is just the
+                                    beginning. I'm now also venturing into networking and experimenting with AI models
+                                    to expand the boundaries of what I can create.</p>
+
+                                <p><strong>Lesson Learned:</strong> Growth begins where comfort ends. Technical skills
+                                    will open doors—but it’s adaptability, problem-solving, and the drive to never stop
+                                    learning that push you through them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-tabs">
+                <ul class="nav nav-pills mb-5 justify-content-center" id="skills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="programming-tab" data-bs-toggle="pill"
+                            data-bs-target="#programming" type="button" role="tab">
+                            <i class="fas fa-code"></i> Programming
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="frontend-tab" data-bs-toggle="pill" data-bs-target="#frontend"
+                            type="button" role="tab">
+                            <i class="fas fa-laptop-code"></i> Frontend
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="backend-tab" data-bs-toggle="pill" data-bs-target="#backend"
+                            type="button" role="tab">
+                            <i class="fas fa-server"></i> Backend
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="database-tab" data-bs-toggle="pill" data-bs-target="#database"
+                            type="button" role="tab">
+                            <i class="fas fa-database"></i> Database
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="other-tab" data-bs-toggle="pill" data-bs-target="#other"
+                            type="button" role="tab">
+                            <i class="fas fa-cogs"></i> Other
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="skills-tabContent">
+                    <div class="tab-pane fade show active" id="programming" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="75">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-java"></i>
+                                    </div>
+                                    <h4 class="skill-title">Java</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="90">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <h4 class="skill-title">Python</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="85">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                    <h4 class="skill-title">JavaScript</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="75">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <h4 class="skill-title">C++/C#</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="frontend" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="45">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <h4 class="skill-title">React</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="50">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-angular"></i>
+                                    </div>
+                                    <h4 class="skill-title">Angular</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="95">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <h4 class="skill-title">HTML</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="95">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <h4 class="skill-title">CSS</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="backend" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-card" data-skill-level="75">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-node-js"></i>
+                                    </div>
+                                    <h4 class="skill-title">Node.js</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-card" data-skill-level="95">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-php"></i>
+                                    </div>
+                                    <h4 class="skill-title">PHP</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="col-md-6 col-lg-4">
+                                <div class="skill-card" data-skill-level="85">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <h4 class="skill-title">Express</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <!--<div class="col-md-6 col-lg-4">
+                                <div class="skill-card" data-skill-level="80">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-microsoft"></i>
+                                    </div>
+                                    <h4 class="skill-title">.NET</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="database" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-card" data-skill-level="95">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4 class="skill-title">MySQL</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-card" data-skill-level="85">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4 class="skill-title">MongoDB</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="skill-card" data-skill-level="80">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h4 class="skill-title">PostgreSQL</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="other" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="65">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-android"></i>
+                                    </div>
+                                    <h4 class="skill-title">Android Dev</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="70">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-network-wired"></i>
+                                    </div>
+                                    <h4 class="skill-title">Networking</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="65">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <h4 class="skill-title">AI/ML</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="skill-card" data-skill-level="85">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
+                                    <h4 class="skill-title">Cloud</h4>
+                                    <div class="skill-progress">
+                                        <div class="progress-bar" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Skills Section -->
+    <section class="section hardware-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hardware <span class="text-gradient">Expertise</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Hands-on technical skills beyond software</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- PC Building Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="hardware-card">
+                        <div class="hardware-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>PC Building & Upgrades</h3>
+                        <ul class="hardware-skills">
+                            <li>Custom PC builds from scratch</li>
+                            <li>Legacy system modernization</li>
+                            <li>HDD to SSD migrations</li>
+                            <li>Component-level troubleshooting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Networking Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="hardware-card">
+                        <div class="hardware-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Networking</h3>
+                        <ul class="hardware-skills">
+                            <li>Cisco switch/router installation</li>
+                            <li>Access point deployment</li>
+                            <li>Structured cabling</li>
+                            <li>Network closet builds</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Electronics Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="hardware-card">
+                        <div class="hardware-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Electronics</h3>
+                        <ul class="hardware-skills">
+                            <li>Soldering (through-hole/SMD)</li>
+                            <li>Circuit board repair</li>
+                            <li>Custom cable fabrication</li>
+                            <li>Power supply work</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tools Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="hardware-card">
+                        <div class="hardware-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Technical Toolset</h3>
+                        <ul class="hardware-skills">
+                            <li>Diagnostic equipment</li>
+                            <li>Crimping tools</li>
+                            <li>Component testing</li>
+                            <li>3D printing (if applicable)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hardware-story mt-5">
+                <h4>My Hardware Journey</h4>
+                <p>Since childhood, I've been fascinated by hardware - from rebuilding my first PC at 12 to
+                    professionally deploying enterprise networking equipment. What began with taking apart old
+                    electronics evolved into:</p>
+                <ul>
+                    <li>Converting dozens of HDD systems to SSDs for performance gains</li>
+                    <li>Installing and configuring Cisco switches for corporate networks</li>
+                    <li>Modding cases and building custom water-cooled rigs</li>
+                    <li>Repairing electronics at component level with precision soldering</li>
+                </ul>
+                <p>This hands-on experience gives me unique insight into full-stack system design - from silicon to
+                    software.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-gradient">Portfolio</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">A showcase of my best projects</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="row g-4">
+                    <!-- Emergency Response System -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="system">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                    alt="Emergency Response System" class="portfolio-image">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-buttons">
+                                        <button class="btn btn-sm btn-primary view-details" data-project="ers">
+                                            View Details
+                                        </button>
+                                        <!--<button class="btn btn-sm btn-outline-light quick-view" data-bs-toggle="modal"
+                                            data-bs-target="#portfolioModal1">
+                                            Quick View
+                                        </button>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Emergency Response System</h3>
+                                <p class="portfolio-description">A full-scale Admin, Dispatching and Responding System
+                                    with integrated Android App.</p>
+                                <!--<div class="portfolio-tech">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">Android</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SAOPO System -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                                    alt="SAOPO System" class="portfolio-image">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-buttons">
+                                        <button class="btn btn-sm btn-primary view-details" data-project="saopo">
+                                            View Details
+                                        </button>
+                                        <!--<button class="btn btn-sm btn-outline-light quick-view" data-bs-toggle="modal"
+                                            data-bs-target="#portfolioModal2">
+                                            Quick View
+                                        </button>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">SAOPO - Restraining Order System</h3>
+                                <p class="portfolio-description">A cloud-based platform for filing and applying for
+                                    restraining orders.</p>
+                                <!--<div class="portfolio-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">AWS</span>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more portfolio items as needed -->
+                    <!--<div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image-wrapper">
+                                <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                    alt="Mobile App Project" class="portfolio-image">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-buttons">
+                                        <button class="btn btn-sm btn-primary view-details" data-project="mobile-app">
+                                            View Details
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-light quick-view" data-bs-toggle="modal"
+                                            data-bs-target="#portfolioModal3">
+                                            Quick View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Health Tracker App</h3>
+                                <p class="portfolio-description">A comprehensive mobile application for health
+                                    monitoring and fitness tracking.</p>
+                                <div class="portfolio-tech">
+                                    <span class="tech-tag">Flutter</span>
+                                    <span class="tech-tag">Firebase</span>
+                                    <span class="tech-tag">Dart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="portfolio-more text-center mt-5">
+                <button class="btn btn-primary btn-glow" id="loadMorePortfolio">
+                    <span class="btn-text">Load More Projects</span>
+                    <span class="btn-icon"><i class="fas fa-plus"></i></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modals -->
+    <!-- Modal for ERS -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Emergency Response System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="portfolio-modal-slider">
+                                    <div id="carouselModal1" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselModal1" data-bs-slide-to="0"
+                                                class="active"></button>
+                                            <button type="button" data-bs-target="#carouselModal1"
+                                                data-bs-slide-to="1"></button>
+                                            <button type="button" data-bs-target="#carouselModal1"
+                                                data-bs-slide-to="2"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="ERS Images\ADashboard.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images\Analytics.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images\Dashboard.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images\Details View.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images\ICreation.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images\IDetails.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images\IForm.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images\Login.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images\Messaging.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images/RDashboard.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="ERS Images\Roster.png" class="d-block w-100"
+                                                    alt="ERS Screenshot 3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselModal1" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselModal1" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="portfolio-modal-details">
+                                    <h3>Project Overview</h3>
+                                    <p>The Emergency Response System is a comprehensive solution designed to streamline
+                                        emergency management operations. It integrates web-based administration,
+                                        real-time dispatching, and mobile response units into a cohesive platform.</p>
+
+                                    <h4>Key Features</h4>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check-circle"></i> Real-time incident reporting and
+                                            tracking</li>
+                                        <li><i class="fas fa-check-circle"></i> Automated resource allocation</li>
+                                        <li><i class="fas fa-check-circle"></i> Integrated Android app for field
+                                            responders</li>
+                                        <li><i class="fas fa-check-circle"></i> Secure communication channels</li>
+                                        <li><i class="fas fa-check-circle"></i> Analytics dashboard for performance
+                                            metrics</li>
+                                    </ul>
+
+                                    <div class="portfolio-tech-modal">
+                                        <h4>Technologies Used</h4>
+                                        <div class="tech-tags">
+                                            <span class="tech-tag">Java</span>
+                                            <span class="tech-tag">Android SDK</span>
+                                            <span class="tech-tag">Spring Boot</span>
+                                            <span class="tech-tag">MySQL</span>
+                                            <span class="tech-tag">WebSocket</span>
+                                            <span class="tech-tag">Google Maps API</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio-links-modal">
+                                        <a href="ERS.html" class="btn btn-primary">
+                                            <i class="fas fa-external-link-alt"></i> View Project Details
+                                        </a>
+                                        <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                            <i class="fas fa-times"></i> Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for SAOPO -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">SAOPO - Restraining Order System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="portfolio-modal-slider">
+                                    <div id="carouselModal2" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselModal2" data-bs-slide-to="0"
+                                                class="active"></button>
+                                            <button type="button" data-bs-target="#carouselModal2"
+                                                data-bs-slide-to="1"></button>
+                                            <button type="button" data-bs-target="#carouselModal2"
+                                                data-bs-slide-to="2"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                                                    class="d-block w-100" alt="SAOPO Screenshot 1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://images.unsplash.com/photo-1581092921461-39b2f2f8a1c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                                    class="d-block w-100" alt="SAOPO Screenshot 2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="https://images.unsplash.com/photo-1581093057305-25a8e1e01e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                                    class="d-block w-100" alt="SAOPO Screenshot 3">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselModal2" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselModal2" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="portfolio-modal-details">
+                                    <h3>Project Overview</h3>
+                                    <p>SAOPO is a cloud-based platform that revolutionizes the process of filing and
+                                        managing restraining orders, providing a secure and efficient digital solution
+                                        for legal protection services.</p>
+
+                                    <h4>Key Features</h4>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check-circle"></i> Secure online application submission
+                                        </li>
+                                        <li><i class="fas fa-check-circle"></i> Document management system</li>
+                                        <li><i class="fas fa-check-circle"></i> Workflow automation</li>
+                                        <li><i class="fas fa-check-circle"></i> Real-time status tracking</li>
+                                        <li><i class="fas fa-check-circle"></i> Role-based access control</li>
+                                    </ul>
+
+                                    <div class="portfolio-tech-modal">
+                                        <h4>Technologies Used</h4>
+                                        <div class="tech-tags">
+                                            <span class="tech-tag">React</span>
+                                            <span class="tech-tag">Node.js</span>
+                                            <span class="tech-tag">AWS</span>
+                                            <span class="tech-tag">MongoDB</span>
+                                            <span class="tech-tag">JWT</span>
+                                            <span class="tech-tag">PDF Generation</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="portfolio-links-modal">
+                                        <a href="OPO.html" class="btn btn-primary">
+                                            <i class="fas fa-external-link-alt"></i> View Project Details
+                                        </a>
+                                        <button class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                            <i class="fas fa-times"></i> Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work <span class="text-gradient">Experience</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Software Developer</h3>
+                            <span class="timeline-date">27 May 2024 - 30 August 2024</span>
+                            <span class="timeline-company">Netstream Integrated Solutions</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Revived and led the development of a critical enterprise software project at Netstream
+                                Integrated Solutions. Originally brought in as a 30-day intern to fulfill a university
+                                requirement, I quickly demonstrated value through problem-solving and technical
+                                initiative. Within two weeks, I was offered a permanent position and handed leadership
+                                of a high-priority project that had previously stalled.</p>
+                            <ul class="timeline-list">
+                                <li>Architected and implemented full-stack solutions for both web and Android platforms,
+                                    significantly accelerating project progress and surpassing previous development
+                                    milestones</li>
+                                <li>Took ownership of a previously stalled project, rebuilding it from the ground up
+                                    within two months and establishing development momentum that impressed executive
+                                    leadership</li>
+                                <li>Integrated and consumed RESTful APIs to enable real-time communication across
+                                    platforms, ensuring seamless user experience and backend interoperability</li>
+                                <li>Presented weekly progress demos to the CEO and other stakeholders, aligning
+                                    development with business goals and maintaining transparency throughout the project
+                                    lifecycle</li>
+                                <li>Worked hands-on in both frontend and backend environments, contributing to UI/UX,
+                                    database design, and mobile functionality</li>
+                                <li>Earned a permanent role offer during the internship and became Senior Developer by
+                                    consistently exceeding
+                                    expectations, ultimately leaving only due to academic obligations in the following
+                                    semester</li>
+                            </ul>
+                        </div>
+                        <!--<div class="timeline-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">AWS</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Network Installation Technician</h3>
+                            <span class="timeline-date">2024</span>
+                            <span class="timeline-company">Verizon & Digital Cast</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Contributed as an on-call field technician for enterprise network deployments, taking on
+                                the role to gain exposure to hardware-level infrastructure and support operations.
+                                Despite not being a permanent position, I embraced each opportunity as a chance to grow
+                                technically and personally, working on live environments with international
+                                coordination.</p>
+                            <ul class="timeline-list">
+                                <li>Handled enterprise-grade Cisco hardware including switches, routers, and access
+                                    points received from overseas, performing meticulous inventory checks and serial
+                                    number verification</li>
+                                <li>Worked alongside remote network engineers based internationally to assemble and
+                                    configure devices, serving as the on-site agent during live setup operations</li>
+                                <li>Installed and powered up network devices within server cabinets, ensuring correct
+                                    wiring, power management, and connectivity for successful remote configuration</li>
+                                <li>Provided hands-on support during remote access sessions by facilitating direct
+                                    hardware interaction and feedback for the configuring engineers</li>
+                                <li>Delivered completed site setups after receiving final sign-offs from local company
+                                    representatives, confirming full operational readiness of network infrastructure
+                                </li>
+                                <li>Maintained accurate documentation throughout every stage of deployment, contributing
+                                    to 100% inventory accuracy and audit readiness</li>
+                            </ul>
+                        </div>
+                        <!--<div class="timeline-tech">
+                            <span class="tech-tag">Cisco</span>
+                            <span class="tech-tag">Network Configuration</span>
+                            <span class="tech-tag">Hardware Installation</span>
+                            <span class="tech-tag">Remote Support</span>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Developer</h3>
+                            <span class="timeline-date">10 Feb 2025 - Present</span>
+                            <span class="timeline-company">Mdalisu Financial Investments (Pty) Ltd</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Serving as a full-time developer responsible for internal systems at the organization, I
+                                was hired based on the strength of my portfolio and have since played a key role in
+                                transforming digital operations. I lead development, optimization, and support efforts
+                                for the CRM and intranet, while also initiating cost-saving projects that replace
+                                third-party services with in-house solutions.</p>
+                            <ul class="timeline-list">
+                                <li>Led the development and ongoing enhancement of the company’s CRM platform, managing
+                                    integrations, performance improvements, bug fixes, and new feature planning</li>
+                                <li>Designed, built, and deployed a custom internal intranet system from scratch,
+                                    streamlining internal communication and departmental resource access</li>
+                                <li>Eliminated reliance on multiple paid services by developing custom in-house tools,
+                                    significantly reducing operational costs</li>
+                                <li>Conducted comprehensive quality control and testing across all modules, including
+                                    regression, user acceptance, and performance testing</li>
+                                <li>Collaborated closely with the Business Development Manager to ensure technical
+                                    implementations aligned with business goals and departmental workflows</li>
+                                <li>Hosted a user-centric workshop in a hotel conference venue to gather direct feedback
+                                    from daily CRM users, improving user experience and driving higher system adoption
+                                </li>
+                                <li>Created training materials and test packs, and led workshops to upskill employees
+                                    across departments, ensuring smooth adoption of new features and systems</li>
+                                <li>Approach every challenge as an opportunity to sharpen problem-solving skills and
+                                    grow in both technical depth and professional character</li>
+                            </ul>
+                        </div>
+                        <!--<div class="timeline-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">AWS</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="timeline-line"></div>
+            </div>
+            <div class="experience-more text-center mt-5">
+                <button class="btn btn-outline-primary" id="viewFullResume">
+                    <i class="fas fa-file-alt"></i> View Full Resume
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-gradient">Certificates</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Academic achievements and qualifications</p>
+            </div>
+
+            <div class="certificates-container">
+                <div class="row g-4">
+                    <!-- Matric Certificate -->
+                    <div class="col-lg-6">
+                        <div class="certificate-card">
+                            <div class="certificate-image-wrapper">
+                                <img src="1000193029.jpg" alt="Matric Certificate" class="certificate-image">
+                                <div class="certificate-overlay">
+                                    <button class="btn btn-primary btn-view" data-bs-toggle="modal"
+                                        data-bs-target="#matricModal">
+                                        <i class="fas fa-expand"></i> View Certificate
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">National Senior Certificate</h3>
+                                <p class="certificate-description">Completed my high school education with distinction
+                                    in Information Technology and Life Sciences.</p>
+                                <div class="certificate-meta">
+                                    <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2020</span>
+                                    <span class="meta-item"><i class="fas fa-university"></i> High School</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Degree Certificate -->
+                    <div class="col-lg-6">
+                        <div class="certificate-card">
+                            <div class="certificate-image-wrapper">
+                                <img src="IMG-20250516-WA0025.jpg" alt="Degree Certificate" class="certificate-image">
+                                <div class="certificate-overlay">
+                                    <button class="btn btn-primary btn-view" data-bs-toggle="modal"
+                                        data-bs-target="#degreeModal">
+                                        <i class="fas fa-expand"></i> View Certificate
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">Bachelor's Degree in IT</h3>
+                                <p class="certificate-description">Completed my studies with a focus on
+                                    Software Development and Systems Architecture.</p>
+                                <div class="certificate-meta">
+                                    <span class="meta-item"><i class="fas fa-calendar-alt"></i> 2024</span>
+                                    <span class="meta-item"><i class="fas fa-university"></i> College</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modals -->
+    <!-- Matric Certificate Modal -->
+    <div class="modal fade" id="matricModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">National Senior Certificate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="1000193029.jpg" alt="Matric Certificate" class="img-fluid certificate-modal-image">
+                    <div class="certificate-details mt-4">
+                        <h4>Details</h4>
+                        <ul class="details-list">
+                            <li><strong>Institution:</strong> Solvista Secondary School</li>
+                            <li><strong>Year Completed:</strong> 2021</li>
+                            <li><strong>Subjects:</strong> Math, Physical Sciences, Life Sciences, Information Tech</li>
+                            <li><strong>Achievements:</strong> Distinctions in Information Technology and Life Sciences
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="1000193029.jpg" download class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Degree Certificate Modal -->
+    <div class="modal fade" id="degreeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bachelor's Degree in IT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="IMG-20250516-WA0025.jpg" alt="Degree Certificate"
+                        class="img-fluid certificate-modal-image">
+                    <div class="certificate-details mt-4">
+                        <h4>Details</h4>
+                        <ul class="details-list">
+                            <li><strong>Institution:</strong> Richfield Graduate Institute of Technology</li>
+                            <li><strong>Year Completed:</strong> 2024</li>
+                            <li><strong>Major:</strong> Information Technology</li>
+                            <li><strong>Specializations:</strong> Software Development</li>
+                            <li><strong>Passed with Cum Laude</strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="IMG-20250516-WA0025.jpg" download class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <!--<section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client <span class="text-gradient">Testimonials</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">What people say about my work</p>
+            </div>
+            <div class="testimonials-slider">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">Shravan delivered an exceptional emergency response
+                                        system that has transformed our operations. His technical expertise and
+                                        attention to detail ensured a solution that was both powerful and intuitive for
+                                        our teams to use.</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">
+                                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John D.">
+                                        </div>
+                                        <div class="author-info">
+                                            <h5 class="author-name">John D.</h5>
+                                            <p class="author-title">Director of Emergency Services</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">Working with Shravan on our restraining order platform
+                                        was a game-changer. He understood our complex legal requirements and translated
+                                        them into a user-friendly system that has significantly improved our processing
+                                        times.</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">
+                                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M.">
+                                        </div>
+                                        <div class="author-info">
+                                            <h5 class="author-name">Sarah M.</h5>
+                                            <p class="author-title">Legal Services Coordinator</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-quote">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="testimonial-text">Shravan's network installation work was impeccable. His
+                                        technical knowledge and problem-solving skills helped us overcome several
+                                        infrastructure challenges during our office expansion.</p>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">
+                                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael T.">
+                                        </div>
+                                        <div class="author-info">
+                                            <h5 class="author-name">Michael T.</h5>
+                                            <p class="author-title">IT Manager</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Let's build something amazing together</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Contact Information</h3>
+                        <p class="contact-text">Feel free to reach out to me for project inquiries, collaboration
+                            opportunities, or just to say hello!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Email</h4>
+                                    <a href="mailto:shravanr412@gmail.com">shravanr412@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+27812828567">+27 81 282 8567</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>WhatsApp</h4>
+                                    <a href="https://wa.me/27688271569" target="_blank">+27 68 827 1569</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Location</h4>
+                                    <span>Durban, South Africa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="contact-social">
+                            <h4>Follow Me</h4>
+                            <div class="social-links">
+                                <a href="#" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank" class="social-link"><i
+                                        class="fab fa-stack-overflow"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <h3 class="contact-form-title">Send Me a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                        <label for="name">Your Name</label>
+                                        <div class="form-icon">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <label for="email">Your Email</label>
+                                        <div class="form-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject" required>
+                                <label for="subject">Subject</label>
+                                <div class="form-icon">
+                                    <i class="fas fa-tag"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Your Message</label>
+                                <div class="form-icon">
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary btn-glow" id="submitBtn">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                </button>
+                            </div>
+                        </form>
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="position: absolute; width: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="#" class="footer-logo">Shravan Ramnarain</a>
+                        <p class="footer-about-text">Senior IT Developer & Solutions Architect crafting innovative
+                            digital experiences and robust technical solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h4 class="footer-title">Services</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile App Development</a></li>
+                            <li><a href="#">System Architecture</a></li>
+                            <li><a href="#">Cloud Solutions</a></li>
+                            <li><a href="#">IT Consulting</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-contact">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <ul>
+                            <a href="mailto:shravanr412@gmail.com">
+                                <li><i class="fas fa-envelope"></i> shravanr412@gmail.com</li>
+                            </a>
+                            <a href="tel:+27812828567">
+                                <li><i class="fas fa-phone-alt"></i> +27 81 282 8567</li>
+                            </a>
+                            <a href="https://wa.me/27688271569" target="_blank">
+                                <li><i class="fab fa-whatsapp"></i> +27 68 827 1569</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2025 Shravan Ramnarain. All Rights Reserved.</p>
+                    </div>
+                    <!--<div class="col-md-6">
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Cursor Effects Canvas -->
+    <canvas id="cursorCanvas"></canvas>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Particle.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formMessage = document.getElementById('formMessage');
+
+            // Prepare form data
+            const formData = new FormData(form);
+
+            try {
+                const response = await fetch('https://formsubmit.co/ajax/shravanr412@gmail.com', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    formMessage.style.color = 'green';
+                    formMessage.textContent = "Thank you! Your message has been sent.";
+                    form.reset();
+                } else {
+                    const data = await response.json();
+                    if (data.errors) {
+                        formMessage.style.color = 'red';
+                        formMessage.textContent = data.errors.map(error => error.message).join(", ");
+                    } else {
+                        formMessage.style.color = 'red';
+                        formMessage.textContent = "Oops! There was a problem sending your message.";
+                    }
+                }
+            } catch (error) {
+                formMessage.style.color = 'red';
+                formMessage.textContent = "Oops! There was a problem sending your message.";
+                console.error('Form submit error:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>
